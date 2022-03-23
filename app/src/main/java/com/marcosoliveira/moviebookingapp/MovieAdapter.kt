@@ -21,6 +21,8 @@ class MovieAdapter(private val posts : ArrayList<Movie>) : RecyclerView.Adapter<
         holder.movieImage.setImageResource(currentMovie.movie_img)
         holder.movieTitle.text = currentMovie.title
         holder.movieDescription.text = currentMovie.description
+        holder.movieStarring.text = currentMovie.starring
+        holder.movieRunningTime.text = currentMovie.running_time_min
     }
 
     // It returns how many items we have in our recycle view
@@ -32,5 +34,7 @@ class MovieAdapter(private val posts : ArrayList<Movie>) : RecyclerView.Adapter<
         val movieImage : ImageView = itemView.findViewById(R.id.movie_img)
         val movieTitle : TextView = itemView.findViewById(R.id.movie_title)
         val movieDescription : TextView = itemView.findViewById(R.id.movie_description)
+        var movieStarring : TextView = itemView.findViewById(R.id.movie_starring)
+        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
     }
 }

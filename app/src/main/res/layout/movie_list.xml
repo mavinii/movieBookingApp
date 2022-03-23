@@ -14,7 +14,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" >
 
         <!-- CardView Img -->
         <androidx.cardview.widget.CardView
@@ -39,24 +39,77 @@
             android:orientation="vertical"
             android:padding="5dp" >
 
-            <TextView
-                android:id="@+id/movie_title"
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/movie_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_title"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/movie_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_description"
+                    android:textSize="15sp" />
+
+                <!-- Starring -->
+                <TextView
+                    android:id="@+id/movie_starring"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_starring"
+                    android:textSize="10sp" />
+
+                <!-- Running Time -->
+                <TextView
+                    android:id="@+id/movie_running_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_running_time"
+                    android:textSize="10sp" />
+
+            <!-- Bottom bar -->
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/movie_title"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:baselineAligned="false">
 
-            <TextView
-                android:id="@+id/movie_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/movie_description"
-                android:textSize="15sp" />
-        </LinearLayout>
-        <!-- END Title and Description   -->
+                    <!-- Icons bottom bar left -->
+                    <LinearLayout
+                        android:gravity="start|center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" >
 
-    </LinearLayout>
-    <!-- END Top Bar -->
+                        <!-- Icon seat -->
+                        <ImageView
+                            android:id="@+id/seats"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_seat"
+                            android:contentDescription="@string/todo" />
+
+                        <!-- Seats remaining -->
+                        <TextView
+                            android:id="@+id/seats_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seats_remaining"
+                            android:textSize="15sp" />
+
+                    </LinearLayout> <!-- END Icons bottom bar left -->
+
+            </LinearLayout> <!-- END Bottom bar -->
+
+        </LinearLayout> <!-- END Title and Description -->
+
+    </LinearLayout> <!-- END Top Bar -->
 
 </LinearLayout>

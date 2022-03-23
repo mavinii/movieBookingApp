@@ -1,7 +1,10 @@
 <resources>
-    <!-- Top bar menu name   -->
-    <string name="app_name">Movie Booking</string>
+    <string name="app_name">Movie Booking App</string>
     <string name="movie_title">Title goes here</string>
     <string name="movie_description">Description goes here</string>
+    <string name="todo">TODO</string>
 
+    <string name="movie_starring">Starring:</string>
+    <string name="movie_running_time">Running time:</string>
+    <string name="seats_remaining"> 0 seats remaining</string>
 </resources>
