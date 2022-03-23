@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.imageview.ShapeableImageView
@@ -14,18 +15,19 @@ class MovieAdapter(private val posts: ArrayList<Movie>) : RecyclerView.Adapter<M
 
      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val inflator = LayoutInflater.from(parent.context)
-        val view =  inflator.inflate(R.layout.movie_list, parent, false)
+        val view = inflator.inflate(R.layout.movie_list, parent, false)
         return MovieViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
 
+        // THIS LINES ARE WORKING
         val post = posts[position]
         holder.itemView.findViewById<TextView>(R.id.movie_title).text = post.title
         holder.itemView.findViewById<TextView>(R.id.movie_description).text = post.title
 
-//        THIS LINE CRASH THE APP
-//        val imageView = holder.itemView.findViewById<TextView>(R.id.movie_img)
+        // THIS LINE CRASH THE APP
+        val dpImageView = holder.itemView.findViewById<ImageView>(R.id.movie_img)
 
     }
 
