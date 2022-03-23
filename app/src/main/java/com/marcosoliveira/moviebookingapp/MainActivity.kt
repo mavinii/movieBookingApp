@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         imageId = arrayOf(
-            R.drawable.AMBULANCE,
-            R.drawable.MORBIUS,
-            R.drawable.SONIC_THE_HEDGEHOG_2,
-            R.drawable.UNCHARTED,
-            R.drawable.THE_BATMAN
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background
         )
 
         title = arrayOf(

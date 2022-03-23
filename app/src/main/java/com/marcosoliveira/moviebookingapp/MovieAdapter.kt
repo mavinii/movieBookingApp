@@ -24,7 +24,9 @@ class MovieAdapter(private val posts: ArrayList<Movie>) : RecyclerView.Adapter<M
         holder.itemView.findViewById<TextView>(R.id.movie_title).text = post.title
         holder.itemView.findViewById<TextView>(R.id.movie_description).text = post.title
 
-        val imageView = holder.itemView.findViewById<TextView>(R.id.movie_img)
+//        THIS LINE CRASH THE APP
+//        val imageView = holder.itemView.findViewById<TextView>(R.id.movie_img)
+
     }
 
     // It returns how many items we have in our recycle view

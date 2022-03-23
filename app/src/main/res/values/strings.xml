@@ -3,7 +3,6 @@
     <string name="app_name">Movie Booking</string>
     <string name="movie_title">Title goes here</string>
     <string name="movie_description">Description goes here</string>
-    <string name="todo">TODO</string>
 
     <!-- Movies Names   -->
     <string-array name="movie_names">
