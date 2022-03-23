@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         // An Array that display all the titles
         title = arrayOf(
-            "Fantastic Beasts: The Secrets of Dumbledore",
+            "Secrets of Dumbledore",
             "Ambulance",
             "Sonic the Hedgehog",
             "The Batman",
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
             "Unable to stop the powerful Dark wizard Gellert Grindelwald alone...",
             "Over one day across the streets of L.A., three lives will change forever.",
             "After settling in Green Hills, Sonic is eager to prove he has what it...",
-            "From Warner Bros. Pictures comes \"The Batman,\" with director Matt Reeves...",
-            "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned treasure..."
+            "From Warner Bros. Pictures comes \"The Batman,\" with director Matt...",
+            "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned..."
         )
 
         // An Array that display all the starring
