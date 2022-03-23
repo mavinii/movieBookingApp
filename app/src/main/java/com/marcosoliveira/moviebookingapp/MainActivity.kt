@@ -19,26 +19,26 @@ class MainActivity : AppCompatActivity() {
 
         imageId = arrayOf(
             R.drawable.fantastic_beasts_the_secrets_of_bumbledore_poster,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background
+            R.drawable.ambulance_poster,
+            R.drawable.sonic_2_poster,
+            R.drawable.the_batmain_poster,
+            R.drawable.uncharted_poster
         )
 
         title = arrayOf(
-            "Title 1",
-            "Title 2",
-            "Title 3",
-            "Title 4",
-            "Title 5"
+            "Fantastic Beasts: The Secrets of Dumbledore",
+            "Ambulance",
+            "Sonic the Hedgehog",
+            "The Batman",
+            "Uncharted"
         )
 
         descrition = arrayOf(
-            "Description 1",
-            "Description 2",
-            "Description 3",
-            "Description 4",
-            "Description 5"
+            "Unable to stop the powerful Dark wizard Gellert Grindelwald alone...",
+            "Over one day across the streets of L.A., three lives will change forever.",
+            "After settling in Green Hills, Sonic is eager to prove he has what it...",
+            "From Warner Bros. Pictures comes \"The Batman,\" with director Matt Reeves...",
+            "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned treasure..."
         )
 
         newRecycleView = findViewById(R.id.recycleView)

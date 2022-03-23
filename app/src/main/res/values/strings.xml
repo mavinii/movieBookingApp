@@ -4,21 +4,4 @@
     <string name="movie_title">Title goes here</string>
     <string name="movie_description">Description goes here</string>
 
-    <!-- Movies Names   -->
-    <string-array name="movie_names">
-        <item>AMBULANCE</item>
-        <item>MORBIUS</item>
-        <item>SONIC THE HEDGEHOG 2</item>
-        <item>THE BATMAN</item>
-        <item>UNCHARTED</item>
-    </string-array>
-
-    <!-- Movies Description   -->
-    <string-array name="movie_description">
-        <item>Loren Ipsun test description goes gere.</item>
-        <item>Loren Ipsun test description goes gere.</item>
-        <item>Loren Ipsun test description goes gere.</item>
-        <item>Loren Ipsun test description goes gere.</item>
-        <item>Loren Ipsun test description goes gere.</item>
-    </string-array>
 </resources>

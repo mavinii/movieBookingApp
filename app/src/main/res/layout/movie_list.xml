@@ -44,14 +44,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/movie_title"
-                android:textSize="24sp" />
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/movie_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/movie_description"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
         </LinearLayout>
         <!-- END Title and Description   -->
 
