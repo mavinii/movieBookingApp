@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         imageId = arrayOf(
-            R.drawable.ic_launcher_background,
+            R.drawable.fantastic_beasts_the_secrets_of_bumbledore_poster,
             R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
