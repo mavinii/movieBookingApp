@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var imageId : Array<Int>
     lateinit var title : Array<String>
     lateinit var descrition : Array<String>
-    lateinit var starring : Array<String>
+    lateinit var genres : Array<String>
     lateinit var running_time_min : Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.movie_description_5)
         )
 
-        // An Array that display all the starring
-        starring = arrayOf(
+        // Array that display all the genres
+        genres = arrayOf(
             getString(R.string.genre_movie_1),
             getString(R.string.genre_movie_2),
             getString(R.string.genre_movie_3),
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     // Method for running all contents of the array
     private fun getUserdata() {
         for (i in imageId.indices){
-            val news = Movie(imageId[i], title[i], descrition[i], starring[i], running_time_min[i])
+            val news = Movie(imageId[i], title[i], descrition[i], genres[i], running_time_min[i])
             newArrayList.add(news)
         }
 

@@ -58,7 +58,7 @@
 
                 <!-- Starring -->
                 <TextView
-                    android:id="@+id/movie_starring"
+                    android:id="@+id/movie_genres"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Movie genre"
@@ -81,7 +81,7 @@
 
                     <!-- Icons bottom bar left -->
                     <LinearLayout
-                        android:paddingTop="25dp"
+                        android:paddingTop="15dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" >
@@ -91,6 +91,7 @@
                             android:id="@+id/seats"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
+                            android:layout_marginRight="8dp"
                             android:src="@drawable/ic_seat"
                             android:contentDescription="@string/todo" />
 
@@ -114,9 +115,9 @@
                         android:id="@+id/book_now_btn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="12sp"
+                        android:textSize="15sp"
                         android:text="Book Now"
-                        android:backgroundTint="@color/black"
+                        style="?attr/borderlessButtonStyle"
                         android:textAllCaps="true"/>
                 </LinearLayout> <!-- END Button book now -->
 

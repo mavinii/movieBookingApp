@@ -33,5 +33,5 @@
     <string name="movie_running_time_5">2Hr 09min</string>
 
     <!-- Movies Seats remaining goes here ? check it later on -->
-    <string name="seats_remaining"> 0 seats remaining</string>
+    <string name="seats_remaining">0 available</string>
 </resources>
