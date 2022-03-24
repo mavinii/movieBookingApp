@@ -61,7 +61,7 @@
                     android:id="@+id/movie_starring"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Movie starring"
+                    android:text="Movie genre"
                     android:textSize="11sp" />
 
                 <!-- Running Time -->
@@ -74,7 +74,6 @@
 
             <!-- Bottom bar -->
             <LinearLayout
-                android:paddingTop="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +81,7 @@
 
                     <!-- Icons bottom bar left -->
                     <LinearLayout
-                        android:gravity="start|center"
+                        android:paddingTop="25dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" >
@@ -104,6 +103,22 @@
                             android:textSize="14sp" />
 
                     </LinearLayout> <!-- END Icons bottom bar left -->
+
+
+                <!-- Button book now -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/book_now_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Book Now"
+                        android:backgroundTint="@color/black"
+                        android:textAllCaps="true"/>
+                </LinearLayout> <!-- END Button book now -->
 
             </LinearLayout> <!-- END Bottom bar -->
 

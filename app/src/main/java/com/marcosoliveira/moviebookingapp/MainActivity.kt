@@ -50,11 +50,11 @@ class MainActivity : AppCompatActivity() {
 
         // An Array that display all the starring
         starring = arrayOf(
-            getString(R.string.starring_movie_1),
-            getString(R.string.starring_movie_2),
-            getString(R.string.starring_movie_3),
-            getString(R.string.starring_movie_4),
-            getString(R.string.starring_movie_5)
+            getString(R.string.genre_movie_1),
+            getString(R.string.genre_movie_2),
+            getString(R.string.genre_movie_3),
+            getString(R.string.genre_movie_4),
+            getString(R.string.genre_movie_5)
         )
 
         // An Array that display all the running time

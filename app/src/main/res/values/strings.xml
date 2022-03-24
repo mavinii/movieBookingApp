@@ -2,14 +2,12 @@
     <!-- App Name -->
     <string name="app_name">Movie Booking App</string>
 
-
     <!-- Movies Titles -->
     <string name="movie_title_1">Secrets of Dumbledore</string>
     <string name="movie_title_2">Ambulance</string>
     <string name="movie_title_3">Sonic the Hedgehog</string>
     <string name="movie_title_4">The Batman</string>
     <string name="movie_title_5">Uncharted</string>
-
 
     <!-- Movies Descriptions -->
     <string name="movie_description_1">Unable to stop the powerful Dark wizard Gellert Grindelwald alone...</string>
@@ -20,12 +18,12 @@
 
     <string name="todo">TODO</string>
 
-    <!-- Movies Starring -->
-    <string name="starring_movie_1">Lorem:</string>
-    <string name="starring_movie_2">Lorem:</string>
-    <string name="starring_movie_3">Lorem:</string>
-    <string name="starring_movie_4">Lorem:</string>
-    <string name="starring_movie_5">Lorem:</string>
+    <!-- Movies Genre -->
+    <string name="genre_movie_1">Drama</string>
+    <string name="genre_movie_2">Family</string>
+    <string name="genre_movie_3">Drama</string>
+    <string name="genre_movie_4">Horror</string>
+    <string name="genre_movie_5">Comedy | Family</string>
 
     <!-- Movies Running time -->
     <string name="movie_running_time_1">1Hr 56min</string>
@@ -34,6 +32,6 @@
     <string name="movie_running_time_4">2Hr 19min</string>
     <string name="movie_running_time_5">2Hr 09min</string>
 
-    <!-- Movies Seats remaning goes here ? check it later on -->
+    <!-- Movies Seats remaining goes here ? check it later on -->
     <string name="seats_remaining"> 0 seats remaining</string>
 </resources>
