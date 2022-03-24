@@ -23,6 +23,9 @@ class MovieAdapter(private val posts : ArrayList<Movie>) : RecyclerView.Adapter<
         holder.movieDescription.text = currentMovie.description
         holder.movieGenres.text = currentMovie.genres
         holder.movieRunningTime.text = currentMovie.running_time_min
+
+        // Bottom book now
+
     }
 
     // It returns how many items we have in our recycle view

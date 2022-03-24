@@ -1,9 +1,11 @@
 package com.marcosoliveira.moviebookingapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.movie_list.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,6 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         newArrayList = arrayListOf<Movie>()
         getUserdata()
+
     }
 
     // Method for running all contents of the array

@@ -6,7 +6,7 @@
     android:gravity="top"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieActivity">
+    tools:context=".MovieActivity" >
 
 
     <!-- Material IO Cards -->
@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <!-- Media -->
             <ImageView
@@ -77,12 +77,12 @@
                 android:layout_margin="10dp"
                 android:orientation="horizontal">
 
+                <!-- Select seats and add and minus icon -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
-                    android:text="Select Seats"
-                    android:layout_marginStart="8dp" />
+                    android:text="Select Seats" />
 
                 <ImageView
                     android:layout_width="20dp"
@@ -102,11 +102,42 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_add"
-                    android:layout_marginStart="8dp" />
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="57dp"/>
+
+                <!-- Seats remaining -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <!-- Seat icon -->
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:textSize="20dp"
+                        android:src="@drawable/ic_seat"
+                        android:layout_marginEnd="5dp" />
+
+                    <!-- Seats remaining -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="15sp"
+                        android:text="0" />
+
+                    <!-- Seats remaining -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="seats remaining" />
+
+                </LinearLayout> <!-- END Seats remaining -->
 
             </LinearLayout>
 
-            <!-- Buttons -->
+            <!-- Book Now button -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +147,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Book now" />
+                    android:text="Book now" /> <!-- END Book Now button -->
 
             </LinearLayout>
 
