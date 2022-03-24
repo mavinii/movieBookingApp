@@ -3,6 +3,7 @@ package com.marcosoliveira.moviebookingapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.movie_list.*
@@ -84,7 +85,18 @@ class MainActivity : AppCompatActivity() {
             newArrayList.add(news)
         }
 
-        newRecycleView.adapter = MovieAdapter(newArrayList)
 
+        // This function gets the item clicked
+        var adapter = MovieAdapter(newArrayList)
+        newRecycleView.adapter = adapter
+        adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
+            override fun onItemClick(position: Int){
+
+            Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this@MainActivity,MovieActivity::class.java)
+
+            }
+        })
     }
 }

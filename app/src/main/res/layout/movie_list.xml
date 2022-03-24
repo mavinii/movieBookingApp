@@ -107,19 +107,19 @@
 
 
                 <!-- Button book now -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" >-->
 
-                    <Button
-                        android:id="@+id/book_now_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:text="Book Now"
-                        style="?attr/borderlessButtonStyle"
-                        android:textAllCaps="true"/>
-                </LinearLayout> <!-- END Button book now -->
+<!--                    <Button-->
+<!--                        android:id="@+id/book_now_btn"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:text="Book Now"-->
+<!--                        style="?attr/borderlessButtonStyle"-->
+<!--                        android:textAllCaps="true"/>-->
+<!--                </LinearLayout> &lt;!&ndash; END Button book now &ndash;&gt;-->
 
             </LinearLayout> <!-- END Bottom bar -->
 
