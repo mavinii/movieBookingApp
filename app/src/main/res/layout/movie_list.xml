@@ -7,7 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <!-- Top Bar  -->
     <LinearLayout
         android:padding="10dp"
@@ -44,7 +43,7 @@
                     android:id="@+id/movie_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/movie_title"
+                    android:text="Movie title"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
@@ -53,7 +52,7 @@
                     android:id="@+id/movie_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/movie_description"
+                    android:text="Movie Description"
                     android:textSize="15sp"
                     android:paddingBottom="10dp" />
 
@@ -62,7 +61,7 @@
                     android:id="@+id/movie_starring"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/movie_starring"
+                    android:text="Movie starring"
                     android:textSize="11sp" />
 
                 <!-- Running Time -->
@@ -70,7 +69,7 @@
                     android:id="@+id/movie_running_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/movie_running_time"
+                    android:text="Movie running time"
                     android:textSize="11sp" />
 
             <!-- Bottom bar -->

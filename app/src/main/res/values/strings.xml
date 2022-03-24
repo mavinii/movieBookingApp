@@ -1,10 +1,39 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">Movie Booking App</string>
-    <string name="movie_title">Title goes here</string>
-    <string name="movie_description">Description goes here</string>
+
+
+    <!-- Movies Titles -->
+    <string name="movie_title_1">Secrets of Dumbledore</string>
+    <string name="movie_title_2">Ambulance</string>
+    <string name="movie_title_3">Sonic the Hedgehog</string>
+    <string name="movie_title_4">The Batman</string>
+    <string name="movie_title_5">Uncharted</string>
+
+
+    <!-- Movies Descriptions -->
+    <string name="movie_description_1">Unable to stop the powerful Dark wizard Gellert Grindelwald alone...</string>
+    <string name="movie_description_2">Over one day across the streets of L.A., three lives will change forever...</string>
+    <string name="movie_description_3">After settling in Green Hills, Sonic is eager to prove he has what it...</string>
+    <string name="movie_description_4">From Warner Bros. Pictures comes "The Batman," with director Matt...</string>
+    <string name="movie_description_5">Street-smart Nathan Drake (Tom Holland) is recruited by seasoned...</string>
+
     <string name="todo">TODO</string>
 
-    <string name="movie_starring">Starring:</string>
-    <string name="movie_running_time">Running time:</string>
+    <!-- Movies Starring -->
+    <string name="starring_movie_1">Lorem:</string>
+    <string name="starring_movie_2">Lorem:</string>
+    <string name="starring_movie_3">Lorem:</string>
+    <string name="starring_movie_4">Lorem:</string>
+    <string name="starring_movie_5">Lorem:</string>
+
+    <!-- Movies Running time -->
+    <string name="movie_running_time_1">1Hr 56min</string>
+    <string name="movie_running_time_2">1Hr 48min</string>
+    <string name="movie_running_time_3">1Hr 29min</string>
+    <string name="movie_running_time_4">2Hr 19min</string>
+    <string name="movie_running_time_5">2Hr 09min</string>
+
+    <!-- Movies Seats remaning goes here ? check it later on -->
     <string name="seats_remaining"> 0 seats remaining</string>
 </resources>

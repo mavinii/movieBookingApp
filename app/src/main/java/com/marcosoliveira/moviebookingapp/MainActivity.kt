@@ -9,6 +9,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var newRecycleView : RecyclerView
     private lateinit var newArrayList : ArrayList<Movie>
+
+    // variables of the movie
     lateinit var imageId : Array<Int>
     lateinit var title : Array<String>
     lateinit var descrition : Array<String>
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // An Array that display all the imgs
+        // Array that displays all the images
         imageId = arrayOf(
             R.drawable.fantastic_beasts_the_secrets_of_bumbledore_poster,
             R.drawable.ambulance_poster,
@@ -28,40 +30,40 @@ class MainActivity : AppCompatActivity() {
             R.drawable.uncharted_poster
         )
 
-        // An Array that display all the titles
+        // Array that brings all the Titles from strings.xml file
         title = arrayOf(
-            "Secrets of Dumbledore",
-            "Ambulance",
-            "Sonic the Hedgehog",
-            "The Batman",
-            "Uncharted"
+            getString(R.string.movie_title_1),
+            getString(R.string.movie_title_2),
+            getString(R.string.movie_title_3),
+            getString(R.string.movie_title_4),
+            getString(R.string.movie_title_5)
         )
 
-        // An Array that display all the descriptions
+        // Array that brings all the Description from strings.xml file
         descrition = arrayOf(
-            "Unable to stop the powerful Dark wizard Gellert Grindelwald alone...",
-            "Over one day across the streets of L.A., three lives will change forever.",
-            "After settling in Green Hills, Sonic is eager to prove he has what it...",
-            "From Warner Bros. Pictures comes \"The Batman,\" with director Matt...",
-            "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned..."
+            getString(R.string.movie_description_1),
+            getString(R.string.movie_description_2),
+            getString(R.string.movie_description_3),
+            getString(R.string.movie_description_4),
+            getString(R.string.movie_description_5)
         )
 
         // An Array that display all the starring
         starring = arrayOf(
-            "Loren",
-            "Loren",
-            "Loren",
-            "Loren",
-            "Loren"
+            getString(R.string.starring_movie_1),
+            getString(R.string.starring_movie_2),
+            getString(R.string.starring_movie_3),
+            getString(R.string.starring_movie_4),
+            getString(R.string.starring_movie_5)
         )
 
-        // An Array that display all the starring
+        // An Array that display all the running time
         running_time_min = arrayOf(
-            "1Hr 56mins",
-            "1Hr 56mins",
-            "1Hr 56mins",
-            "1Hr 56mins",
-            "1Hr 56mins"
+            getString(R.string.movie_running_time_1),
+            getString(R.string.movie_running_time_2),
+            getString(R.string.movie_running_time_3),
+            getString(R.string.movie_running_time_4),
+            getString(R.string.movie_running_time_5)
         )
 
         newRecycleView = findViewById(R.id.recycleView)
