@@ -14,24 +14,21 @@ class MovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie)
     }
-//
-//
-//    // variables of the movie
-//    val mainTitle : TextView = findViewById(R.id.movie_title)
-//    val mainDescription : TextView = findViewById(R.id.movie_description)
-//    val mainImage : ImageView = findViewById(R.id.movie_img)
-//
-////    val genres : TextView = findViewById(R.id.movie_genres)
-////    val runningTime : TextView = findViewById(R.id.movie_running_time)
-//
+
+//    val imageSecondScreen : ImageView = findViewById(R.id.image_second_screen)
+//    val titleSecondScreen : TextView = findViewById(R.id.title_second_screen)
+//    val descriptionSecondScreen : TextView = findViewById(R.id.description_second_screen)
 //
 //    val bundle : Bundle?= intent.extras
 //
+//    val image = bundle!!.getInt("image")
 //    val title = bundle!!.getString("title")
-//    val image = bundle?.getInt("image")
-//    val title = bundle?.getString("title")
+//    val description = bundle!!.getString("description")
 
-//    THIS LINE NEEDS TO CONNECT FOR OPENING MY MOVIEACTIVITY
-//    mainTitle.text = title
+
+    // I CANT DECLARE THE VAR "imageSecondScreen" WITH "image"
+//    imageSecondScreen.setImageResource(image)
+//    titleSecondScreen.text = title
+//    descriptionSecondScreen.text = description
 
 }
