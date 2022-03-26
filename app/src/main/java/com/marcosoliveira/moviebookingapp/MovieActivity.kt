@@ -14,19 +14,28 @@ class MovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie)
 
+        // variables that belongs to the second screen
         val imageSecondScreen : ImageView = findViewById(R.id.image_second_screen)
         val titleSecondScreen : TextView = findViewById(R.id.title_second_screen)
         val descriptionSecondScreen : TextView = findViewById(R.id.description_second_screen)
+        val starringSecondScreen : TextView = findViewById(R.id.starring_second_screen)
+        val runningTimeSecondScreen : TextView = findViewById(R.id.running_time_second_screen)
 
         val bundle : Bundle?= intent.extras
 
+        // variables of the Main Activity
         val image = bundle!!.getInt("image")
         val title = bundle!!.getString("title")
         val description = bundle!!.getString("description")
+        val starring = bundle!!.getString("genres")
+        val runningTime = bundle!!.getString("runningTime")
 
+        // connecting the variables main screen second screen
         imageSecondScreen.setImageResource(image)
         titleSecondScreen.text = title
         descriptionSecondScreen.text = description
+        starringSecondScreen.text = starring
+        runningTimeSecondScreen.text = runningTime
     }
 
     //    ERROR FOUND, I WAS TRYING TO EXECUTE THIS CODE OUSIDE OF MY METHOD ONCREATE

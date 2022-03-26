@@ -52,77 +52,77 @@
                     android:textSize="15sp"
                     android:paddingBottom="10dp" />
 
-<!--                &lt;!&ndash; Starring &ndash;&gt;-->
-<!--                <TextView-->
-<!--                    android:id="@+id/movie_genres"-->
+                <!-- Starring -->
+                <TextView
+                    android:id="@+id/movie_genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie genre"
+                    android:textSize="11sp" />
+
+                <!-- Running Time -->
+                <TextView
+                    android:id="@+id/movie_running_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie running time"
+                    android:textSize="11sp" />
+
+
+
+
+
+
+            <!-- Bottom bar -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                    <!-- Icons bottom bar left -->
+                    <LinearLayout
+                        android:paddingTop="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" >
+
+                        <!-- Icon seat -->
+                        <ImageView
+                            android:id="@+id/seats"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_seat"
+                            android:contentDescription="@string/todo" />
+
+                        <!-- Seats remaining -->
+                        <TextView
+                            android:id="@+id/seats_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seats_remaining"
+                            android:textSize="14sp" />
+
+                    </LinearLayout> <!-- END Icons bottom bar left -->
+
+
+                <!-- Button book now -->
+<!--                <LinearLayout-->
 <!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Movie genre"-->
-<!--                    android:textSize="11sp" />-->
+<!--                    android:layout_height="wrap_content" >-->
 
-<!--                &lt;!&ndash; Running Time &ndash;&gt;-->
-<!--                <TextView-->
-<!--                    android:id="@+id/movie_running_time"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Movie running time"-->
-<!--                    android:textSize="11sp" />-->
+<!--                    <Button-->
+<!--                        android:id="@+id/book_now_btn"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:text="Book Now"-->
+<!--                        style="?attr/borderlessButtonStyle"-->
+<!--                        android:textAllCaps="true"/>-->
+<!--                </LinearLayout> &lt;!&ndash; END Button book now &ndash;&gt;-->
 
-
-
-
-
-
-<!--            &lt;!&ndash; Bottom bar &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:orientation="horizontal"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:baselineAligned="false">-->
-
-<!--                    &lt;!&ndash; Icons bottom bar left &ndash;&gt;-->
-<!--                    <LinearLayout-->
-<!--                        android:paddingTop="15dp"-->
-<!--                        android:layout_weight="1"-->
-<!--                        android:layout_width="0dp"-->
-<!--                        android:layout_height="wrap_content" >-->
-
-<!--                        &lt;!&ndash; Icon seat &ndash;&gt;-->
-<!--                        <ImageView-->
-<!--                            android:id="@+id/seats"-->
-<!--                            android:layout_width="20dp"-->
-<!--                            android:layout_height="20dp"-->
-<!--                            android:layout_marginRight="8dp"-->
-<!--                            android:src="@drawable/ic_seat"-->
-<!--                            android:contentDescription="@string/todo" />-->
-
-<!--                        &lt;!&ndash; Seats remaining &ndash;&gt;-->
-<!--                        <TextView-->
-<!--                            android:id="@+id/seats_remaining"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/seats_remaining"-->
-<!--                            android:textSize="14sp" />-->
-
-<!--                    </LinearLayout> &lt;!&ndash; END Icons bottom bar left &ndash;&gt;-->
-
-
-<!--                &lt;!&ndash; Button book now &ndash;&gt;-->
-<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
-<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                    android:layout_height="wrap_content" >&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    <Button&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:id="@+id/book_now_btn"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:textSize="15sp"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:text="Book Now"&ndash;&gt;-->
-<!--&lt;!&ndash;                        style="?attr/borderlessButtonStyle"&ndash;&gt;-->
-<!--&lt;!&ndash;                        android:textAllCaps="true"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                </LinearLayout> &lt;!&ndash; END Button book now &ndash;&gt;&ndash;&gt;-->
-
-<!--            </LinearLayout> &lt;!&ndash; END Bottom bar &ndash;&gt;-->
+            </LinearLayout> <!-- END Bottom bar -->
 
 
 

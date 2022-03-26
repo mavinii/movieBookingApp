@@ -39,9 +39,8 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         holder.titleImage.setImageResource(currentItem.titleImage)
         holder.movieTitle.text = currentItem.title
         holder.movieDescription.text = currentItem.description
-
-//        holder.movieGenres.text = currentMovie.genres
-//        holder.movieRunningTime.text = currentMovie.runningTime
+        holder.movieGenres.text = currentItem.genres
+        holder.movieRunningTime.text = currentItem.runningTime
 
     }
 
@@ -56,9 +55,8 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         val titleImage : ShapeableImageView = itemView.findViewById(R.id.title_image)
         val movieTitle : TextView = itemView.findViewById(R.id.movie_title)
         val movieDescription : TextView = itemView.findViewById(R.id.movie_description)
-
-//        var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
-//        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
+        var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
+        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
 
         init {
             itemView.setOnClickListener {

@@ -21,13 +21,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var image : Array<Int>
     lateinit var title : Array<String>
     lateinit var description : Array<String>
-    lateinit var news : Array<String>
-
-
-//    lateinit var titleImage : Array<String>
-//    lateinit var title : Array<String>
-//    lateinit var genres : Array<String>
-//    lateinit var runningTime : Array<String>
+    lateinit var genres : Array<String>
+    lateinit var runningTime : Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,32 +56,22 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Array that display all the genres
-//        genres = arrayOf(
-//            "Title 1",
-//            "Title 2",
-//            "Title 3",
-//            "Title 4",
-//            "Title 5"
-////            getString(R.string.genre_movie_1),
-////            getString(R.string.genre_movie_2),
-////            getString(R.string.genre_movie_3),
-////            getString(R.string.genre_movie_4),
-////            getString(R.string.genre_movie_5)
-//        )
+        genres = arrayOf(
+            getString(R.string.genre_movie_1),
+            getString(R.string.genre_movie_2),
+            getString(R.string.genre_movie_3),
+            getString(R.string.genre_movie_4),
+            getString(R.string.genre_movie_5)
+        )
 
         // An Array that display all the running time
-//        runningTime = arrayOf(
-//            "Title 1",
-//            "Title 2",
-//            "Title 3",
-//            "Title 4",
-//            "Title 5"
-////            getString(R.string.movie_running_time_1),
-////            getString(R.string.movie_running_time_2),
-////            getString(R.string.movie_running_time_3),
-////            getString(R.string.movie_running_time_4),
-////            getString(R.string.movie_running_time_5)
-//        )
+        runningTime = arrayOf(
+            getString(R.string.movie_running_time_1),
+            getString(R.string.movie_running_time_2),
+            getString(R.string.movie_running_time_3),
+            getString(R.string.movie_running_time_4),
+            getString(R.string.movie_running_time_5)
+        )
 
         newRecycleView = findViewById(R.id.recycleView)
         newRecycleView.layoutManager = LinearLayoutManager(this)
@@ -100,7 +85,7 @@ class MainActivity : AppCompatActivity() {
     // Method for running all contents of the array
     private fun getUserdata() {
         for (i in image.indices){
-            val news = Movie(image[i], title[i], description[i]) //, genres[i], runningTime[i], title[i]
+            val news = Movie(image[i], title[i], description[i], genres[i], runningTime[i]) //, genres[i], runningTime[i], title[i]
             newArrayList.add(news)
         }
 
@@ -121,9 +106,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("image",newArrayList[position].titleImage)
             intent.putExtra("title",newArrayList[position].title)
             intent.putExtra("description",newArrayList[position].description)
-
-            // intent.putExtra("genres",newArrayList[position].genres)
-            // intent.putExtra("runningTime",newArrayList[position].runningTime)
+             intent.putExtra("genres",newArrayList[position].genres)
+             intent.putExtra("runningTime",newArrayList[position].runningTime)
 
             startActivity(intent)
 
