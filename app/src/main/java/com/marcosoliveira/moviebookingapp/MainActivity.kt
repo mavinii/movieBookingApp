@@ -122,9 +122,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("title",newArrayList[position].title)
             intent.putExtra("description",newArrayList[position].description)
 
-
-            // intent.putExtra("title",newArrayList[position].title)
-            // intent.putExtra("title",newArrayList[position].title)
             // intent.putExtra("genres",newArrayList[position].genres)
             // intent.putExtra("runningTime",newArrayList[position].runningTime)
 
