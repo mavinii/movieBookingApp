@@ -1,24 +1,31 @@
 package com.marcosoliveira.moviebookingapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.movie_list.*
+import kotlin.collections.ArrayList
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var newRecycleView : RecyclerView
     private lateinit var newArrayList : ArrayList<Movie>
+    private lateinit var tempArrayList : ArrayList<Movie>
+
 
     // variables of the movie
     lateinit var imageId : Array<Int>
     lateinit var title : Array<String>
-    lateinit var descrition : Array<String>
-    lateinit var genres : Array<String>
-    lateinit var running_time_min : Array<String>
+    lateinit var description : Array<String>
+
+
+//    lateinit var titleImage : Array<String>
+//    lateinit var title : Array<String>
+//    lateinit var genres : Array<String>
+//    lateinit var runningTime : Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Array that brings all the Description from strings.xml file
-        descrition = arrayOf(
+        description = arrayOf(
             getString(R.string.movie_description_1),
             getString(R.string.movie_description_2),
             getString(R.string.movie_description_3),
@@ -52,22 +59,32 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Array that display all the genres
-        genres = arrayOf(
-            getString(R.string.genre_movie_1),
-            getString(R.string.genre_movie_2),
-            getString(R.string.genre_movie_3),
-            getString(R.string.genre_movie_4),
-            getString(R.string.genre_movie_5)
-        )
+//        genres = arrayOf(
+//            "Title 1",
+//            "Title 2",
+//            "Title 3",
+//            "Title 4",
+//            "Title 5"
+////            getString(R.string.genre_movie_1),
+////            getString(R.string.genre_movie_2),
+////            getString(R.string.genre_movie_3),
+////            getString(R.string.genre_movie_4),
+////            getString(R.string.genre_movie_5)
+//        )
 
         // An Array that display all the running time
-        running_time_min = arrayOf(
-            getString(R.string.movie_running_time_1),
-            getString(R.string.movie_running_time_2),
-            getString(R.string.movie_running_time_3),
-            getString(R.string.movie_running_time_4),
-            getString(R.string.movie_running_time_5)
-        )
+//        runningTime = arrayOf(
+//            "Title 1",
+//            "Title 2",
+//            "Title 3",
+//            "Title 4",
+//            "Title 5"
+////            getString(R.string.movie_running_time_1),
+////            getString(R.string.movie_running_time_2),
+////            getString(R.string.movie_running_time_3),
+////            getString(R.string.movie_running_time_4),
+////            getString(R.string.movie_running_time_5)
+//        )
 
         newRecycleView = findViewById(R.id.recycleView)
         newRecycleView.layoutManager = LinearLayoutManager(this)
@@ -81,7 +98,7 @@ class MainActivity : AppCompatActivity() {
     // Method for running all contents of the array
     private fun getUserdata() {
         for (i in imageId.indices){
-            val news = Movie(imageId[i], title[i], descrition[i], genres[i], running_time_min[i])
+            val news = Movie(imageId[i], title[i], description[i]) //, genres[i], runningTime[i], title[i]
             newArrayList.add(news)
         }
 
@@ -89,14 +106,33 @@ class MainActivity : AppCompatActivity() {
         // This function gets the item clicked
         var adapter = MovieAdapter(newArrayList)
         newRecycleView.adapter = adapter
+
+
         adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
             override fun onItemClick(position: Int){
 
-            Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_SHORT).show()
+             Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this@MainActivity,MovieActivity::class.java)
+
+            // This line attached all content to intent, and then starts the new activity with it all
+//            val intent = Intent(this@MainActivity,MovieActivity::class.java)
+//            intent.putExtra("title",newArrayList[position].title)
+//            intent.putExtra("imageId",newArrayList[position].imageId)
+//            intent.putExtra("description",description[position])
+
+
+            // intent.putExtra("title",newArrayList[position].title)
+            // intent.putExtra("title",newArrayList[position].title)
+            // intent.putExtra("genres",newArrayList[position].genres)
+            // intent.putExtra("runningTime",newArrayList[position].runningTime)
+
+//            startActivity(intent)
 
             }
         })
+
+
+//        FONTE: https://github.com/foxandroid/RecylerViewKOtlin/blob/master/app/src/main/java/com/example/recylerviewkotlin/MainActivity.kt
+
     }
 }

@@ -3,12 +3,12 @@ package com.marcosoliveira.moviebookingapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.imageview.ShapeableImageView
 
 // font: https://www.youtube.com/watch?v=UbP8E6I91NA
-class MovieAdapter(private val posts : ArrayList<Movie>) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     // Local var mListener
     private lateinit var mListener : onItemClickListener
@@ -32,27 +32,32 @@ class MovieAdapter(private val posts : ArrayList<Movie>) : RecyclerView.Adapter<
 
     // onBindViewHolder is part of RecycleView
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        val currentMovie = posts[position]
-        holder.movieImage.setImageResource(currentMovie.movie_img)
-        holder.movieTitle.text = currentMovie.title
-        holder.movieDescription.text = currentMovie.description
-        holder.movieGenres.text = currentMovie.genres
-        holder.movieRunningTime.text = currentMovie.running_time_min
+
+        val currentItem = newsList[position]
+
+        holder.titleImage.setImageResource(currentItem.titleImage)
+        holder.movieTitle.text = currentItem.title
+        holder.movieDescription.text = currentItem.description
+
+//        holder.movieGenres.text = currentMovie.genres
+//        holder.movieRunningTime.text = currentMovie.runningTime
 
     }
 
     // getItemCount is part of RecycleView
     override fun getItemCount(): Int {
-        return posts.size
+        return newsList.size
     }
 
 
     class MovieViewHolder(itemView : View, listener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
-        val movieImage : ImageView = itemView.findViewById(R.id.movie_img)
+
+        val titleImage : ShapeableImageView = itemView.findViewById(R.id.title_image)
         val movieTitle : TextView = itemView.findViewById(R.id.movie_title)
         val movieDescription : TextView = itemView.findViewById(R.id.movie_description)
-        var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
-        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
+
+//        var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
+//        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
 
         init {
 

@@ -1,18 +1,20 @@
 package com.marcosoliveira.moviebookingapp
 
 data class Movie (
-    var movie_img : Int,
+//    var imageId : Int,
+    var titleImage: Int,
     var title: String,
-    var description: String,
-    var genres: String,
-    var running_time_min: String
+    var description: String
+//    var title: String
+//    var genres: String,
+//    var runningTime: String
 )
 
 //{
 //    "name": "String",
 //    "image": "String",
 //    "certification": "String",
-//    "description": "String",
+//    "title": "String",
 //    "starring": "String Array",
 //    "running_time_mins": "Int",
 //    "seats_remaining": "Int",
