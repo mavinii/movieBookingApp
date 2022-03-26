@@ -11,16 +11,16 @@ import com.google.android.material.imageview.ShapeableImageView
 class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     // Local var mListener
-    private lateinit var mListener : onItemClickListener
+    private lateinit var mListener : OnItemClickListener
 
 
     // This function helps us to create click listener with Toast
-    interface onItemClickListener{
+    interface OnItemClickListener{
         fun onItemClick(position : Int)
     }
 
     // mListener is a local var; listener is passing by argument
-    fun setOnItemClickListener(listener: onItemClickListener){
+    fun setOnItemClickListener(listener: OnItemClickListener){
         mListener = listener
     }
 
@@ -51,7 +51,7 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
     }
 
 
-    class MovieViewHolder(itemView : View, listener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
+    class MovieViewHolder(itemView : View, listener: OnItemClickListener) : RecyclerView.ViewHolder(itemView){
 
         val titleImage : ShapeableImageView = itemView.findViewById(R.id.title_image)
         val movieTitle : TextView = itemView.findViewById(R.id.movie_title)

@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         newRecycleView.adapter = adapter
 
 
-        adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
+        adapter.setOnItemClickListener(object : MovieAdapter.OnItemClickListener {
             override fun onItemClick(position: Int){
 
 //             Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_LONG).show()
