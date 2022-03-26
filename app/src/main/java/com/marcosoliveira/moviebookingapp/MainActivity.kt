@@ -1,5 +1,6 @@
 package com.marcosoliveira.moviebookingapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -17,9 +18,10 @@ class MainActivity : AppCompatActivity() {
 
 
     // variables of the movie
-    lateinit var imageId : Array<Int>
+    lateinit var image : Array<Int>
     lateinit var title : Array<String>
     lateinit var description : Array<String>
+    lateinit var news : Array<String>
 
 
 //    lateinit var titleImage : Array<String>
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Array that displays all the images
-        imageId = arrayOf(
+        image = arrayOf(
             R.drawable.fantastic_beasts_the_secrets_of_bumbledore_poster,
             R.drawable.ambulance_poster,
             R.drawable.sonic_2_poster,
@@ -97,28 +99,28 @@ class MainActivity : AppCompatActivity() {
 
     // Method for running all contents of the array
     private fun getUserdata() {
-        for (i in imageId.indices){
-            val news = Movie(imageId[i], title[i], description[i]) //, genres[i], runningTime[i], title[i]
+        for (i in image.indices){
+            val news = Movie(image[i], title[i], description[i]) //, genres[i], runningTime[i], title[i]
             newArrayList.add(news)
         }
 
 
         // This function gets the item clicked
-        var adapter = MovieAdapter(newArrayList)
+        val adapter = MovieAdapter(newArrayList)
         newRecycleView.adapter = adapter
 
 
         adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
             override fun onItemClick(position: Int){
 
-             Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_SHORT).show()
+//             Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_LONG).show()
 
 
             // This line attached all content to intent, and then starts the new activity with it all
-//            val intent = Intent(this@MainActivity,MovieActivity::class.java)
-//            intent.putExtra("title",newArrayList[position].title)
-//            intent.putExtra("imageId",newArrayList[position].imageId)
-//            intent.putExtra("description",description[position])
+            val intent = Intent(this@MainActivity,MovieActivity::class.java)
+            intent.putExtra("image",newArrayList[position].titleImage)
+            intent.putExtra("title",newArrayList[position].title)
+            intent.putExtra("description",newArrayList[position].description)
 
 
             // intent.putExtra("title",newArrayList[position].title)
@@ -126,7 +128,7 @@ class MainActivity : AppCompatActivity() {
             // intent.putExtra("genres",newArrayList[position].genres)
             // intent.putExtra("runningTime",newArrayList[position].runningTime)
 
-//            startActivity(intent)
+            startActivity(intent)
 
             }
         })

@@ -1,7 +1,7 @@
 package com.marcosoliveira.moviebookingapp
 
 data class Movie (
-//    var imageId : Int,
+//    var image : Int,
     var titleImage: Int,
     var title: String,
     var description: String

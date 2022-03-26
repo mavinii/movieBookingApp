@@ -15,14 +15,15 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
 
 
     // This function helps us to create click listener with Toast
-    interface onItemClickListener {
-        fun onItemClick(position: Int)
+    interface onItemClickListener{
+        fun onItemClick(position : Int)
     }
 
-    // listener is passing by argument
-    fun setOnItemClickListener(listener: Any){
-        mListener = listener as onItemClickListener
+    // mListener is a local var; listener is passing by argument
+    fun setOnItemClickListener(listener: onItemClickListener){
+        mListener = listener
     }
+
 
     // onCreateViewHolder is part of RecycleView
      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
@@ -60,12 +61,11 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
 //        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
 
         init {
-
             itemView.setOnClickListener {
-                listener.onItemClick(adapterPosition)
+                listener.onItemClick(absoluteAdapterPosition) //(adapterPosition)
             }
-
-
         }
+
+
     }
 }

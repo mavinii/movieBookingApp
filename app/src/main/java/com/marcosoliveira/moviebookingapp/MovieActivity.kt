@@ -28,7 +28,7 @@ class MovieActivity : AppCompatActivity() {
 //    val bundle : Bundle?= intent.extras
 //
 //    val title = bundle!!.getString("title")
-//    val imageId = bundle?.getInt("imageId")
+//    val image = bundle?.getInt("image")
 //    val title = bundle?.getString("title")
 
 //    THIS LINE NEEDS TO CONNECT FOR OPENING MY MOVIEACTIVITY
