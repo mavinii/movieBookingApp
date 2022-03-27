@@ -69,10 +69,6 @@
                     android:textSize="11sp" />
 
 
-
-
-
-
             <!-- Bottom bar -->
             <LinearLayout
                 android:orientation="horizontal"
@@ -94,6 +90,7 @@
                             android:layout_height="20dp"
                             android:layout_marginRight="8dp"
                             android:src="@drawable/ic_seat"
+                            app:tint="@color/seats_color"
                             android:contentDescription="@string/todo" />
 
                         <!-- Seats remaining -->
@@ -102,6 +99,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/seats_remaining"
+                            android:textColor="@color/seats_color"
                             android:textSize="14sp" />
 
                     </LinearLayout> <!-- END Icons bottom bar left -->

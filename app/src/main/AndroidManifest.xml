@@ -9,13 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieBookingApp">
-        <!-- The parentActivity and label add a "back bottom" to the main activity -->
-<!--        <activity-->
-<!--            android:name=".MovieActivity"-->
-<!--            android:parentActivityName=".MainActivity"-->
-<!--            android:label="Movie Details"-->
-<!--            android:exported="false" />-->
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

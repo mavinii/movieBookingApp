@@ -124,7 +124,8 @@
                         android:layout_height="20dp"
                         android:textSize="20dp"
                         android:src="@drawable/ic_seat"
-                        android:layout_marginEnd="5dp" />
+                        android:layout_marginEnd="5dp"
+                        app:tint="@color/seats_color" />
 
                     <!-- Seats remaining -->
                     <TextView
@@ -132,6 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
                         android:textSize="15sp"
+                        android:textColor="@color/seats_color"
                         android:text="0" />
 
                     <!-- Seats remaining -->
@@ -139,6 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
+                        android:textColor="@color/seats_color"
                         android:text="seats remaining" />
 
                 </LinearLayout> <!-- END Seats remaining -->
@@ -153,8 +156,10 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/btn_book_now"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/main_color"
                     android:text="Book now" />
 
             </LinearLayout>
