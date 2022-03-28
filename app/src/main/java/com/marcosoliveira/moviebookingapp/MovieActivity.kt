@@ -22,7 +22,6 @@ class MovieActivity : AppCompatActivity() {
         val descriptionSecondScreen : TextView = findViewById(R.id.description_second_screen)
         val starringSecondScreen : TextView = findViewById(R.id.starring_second_screen)
         val runningTimeSecondScreen : TextView = findViewById(R.id.running_time_second_screen)
-        // How to call this line because my array is Int
         val seatsRemainingSecondScreen : TextView = findViewById(R.id.seats_remaining_second_screen)
 
 
@@ -36,8 +35,7 @@ class MovieActivity : AppCompatActivity() {
         val description = bundle!!.getString("description")
         val starring = bundle!!.getString("genres")
         val runningTime = bundle!!.getString("runningTime")
-        // How to call this line because my array is Int
-        val seatsRemaining = bundle!!.getString("seatsRemaining")
+        val seatsRemaining = bundle!!.getString("seatsRemaining")  //How to call this line, cuz its an Array of Int
 
 
         // connecting the variables main screen second screen
@@ -46,8 +44,7 @@ class MovieActivity : AppCompatActivity() {
         descriptionSecondScreen.text = description
         starringSecondScreen.text = starring
         runningTimeSecondScreen.text = runningTime
-        // I cant connect these two vars because my Array is Int
-//        seatsRemainingSecondScreen.text = seatsRemaining
+        seatsRemainingSecondScreen.text = seatsRemaining //How to call this line, cuz its an Array of Int
 
         btn_book_now.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

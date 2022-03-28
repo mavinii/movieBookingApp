@@ -70,9 +70,9 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         val titleImage : ShapeableImageView = itemView.findViewById(R.id.title_image)
         val movieTitle : TextView = itemView.findViewById(R.id.movie_title)
         val movieDescription : TextView = itemView.findViewById(R.id.movie_description)
-        var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
-        var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
-        var movieSeatsRemaining : TextView = itemView.findViewById(R.id.movie_seats_remaining)
+        val movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
+        val movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
+        val movieSeatsRemaining : TextView = itemView.findViewById(R.id.movie_seats_remaining)
 
 
         // Connecting the IDs of my activity_movie (seats Minus and PLus)
