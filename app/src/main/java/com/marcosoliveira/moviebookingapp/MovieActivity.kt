@@ -49,13 +49,14 @@ class MovieActivity : AppCompatActivity() {
 
 
 
-        // btn book with success
+        // BTN book now with Toast and a message / tried with SnackBar but could not make that
+        // works while taking the user the next screen
         val contextView  = findViewById<Button>(R.id.btn_book_now)
         contextView.setOnClickListener {
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            Toast.makeText(this, "Seats booked with success", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "SEATS BOOKED WITH SUCCESS", Toast.LENGTH_LONG).show()
         }
 
     }
