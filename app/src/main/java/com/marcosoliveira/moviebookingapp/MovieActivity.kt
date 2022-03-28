@@ -1,13 +1,14 @@
 package com.marcosoliveira.moviebookingapp
 
 import android.content.Intent
-import android.media.Image
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import org.w3c.dom.Text
-import androidx.recyclerview.widget.RecyclerView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.snackbar.Snackbar.make
 import kotlinx.android.synthetic.main.activity_movie.*
 
 class MovieActivity : AppCompatActivity() {
@@ -46,10 +47,17 @@ class MovieActivity : AppCompatActivity() {
         runningTimeSecondScreen.text = runningTime
         seatsRemainingSecondScreen.text = seatsRemaining.toString()
 
-        btn_book_now.setOnClickListener {
+
+
+        // btn book with success
+        val contextView  = findViewById<Button>(R.id.btn_book_now)
+        contextView.setOnClickListener {
+
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            Toast.makeText(this, "Seats booked with success", Toast.LENGTH_LONG).show()
         }
+
     }
 
 
