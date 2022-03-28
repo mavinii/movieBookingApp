@@ -99,14 +99,14 @@
                     android:layout_height="20dp"
                     android:textSize="20dp"
                     android:src="@drawable/ic_minus"
-                    android:layout_marginStart="8dp" />
+                    android:layout_marginStart="5dp" />
 
                 <TextView
-                    android:id="@+id/num_seats"
                     android:visibility="gone"
+                    android:id="@+id/num_seats"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="9dp"
+                    android:layout_marginStart="5dp"
                     android:textSize="15sp"
                     android:text="0" />
 
@@ -115,7 +115,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_add"
-                    android:layout_marginStart="9dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginEnd="57dp"/>
 
                 <!-- Seats remaining -->

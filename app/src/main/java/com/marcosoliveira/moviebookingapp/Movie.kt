@@ -6,9 +6,9 @@ data class Movie (
     var description: String,
     var genres: String,
     var runningTime: String,
-    var movieSeatsRemaining: Int
+    var movieSeatsRemaining: Int,
 
-//    var numSeats: Int = 0
+    var numSeats: Int = 0
 
 
 )

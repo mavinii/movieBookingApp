@@ -2,6 +2,7 @@ package com.marcosoliveira.moviebookingapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -12,6 +13,8 @@ import com.google.android.material.snackbar.Snackbar.make
 import kotlinx.android.synthetic.main.activity_movie.*
 
 class MovieActivity : AppCompatActivity() {
+
+    lateinit var movieSeatsRemaining: Array<Int>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +32,6 @@ class MovieActivity : AppCompatActivity() {
         val bundle : Bundle?= intent.extras
 
 
-
         // variables of the Main Activity
         val image = bundle!!.getInt("image")
         val title = bundle!!.getString("title")
@@ -39,13 +41,30 @@ class MovieActivity : AppCompatActivity() {
         val seatsRemaining = bundle!!.getInt("seatsRemaining")
 
 
-        // connecting the variables main screen second screen
+        // connecting the variables of the main screen with the vars of the second screen
         imageSecondScreen.setImageResource(image)
         titleSecondScreen.text = title
         descriptionSecondScreen.text = description
         starringSecondScreen.text = starring
         runningTimeSecondScreen.text = runningTime
         seatsRemainingSecondScreen.text = seatsRemaining.toString()
+
+
+//        // Adding or removing seats
+//        val numSeatsTextView = findViewById<TextView>(R.id.num_seats)
+//        val btnMinus = findViewById<ImageView>(R.id.btn_minus)
+//        val btnPlus = findViewById<ImageView>(R.id.btn_plus)
+//
+//        // Adding or remove the number of seats
+//        if(seatsRemaining > 0){
+//            numSeatsTextView.visibility = View.VISIBLE
+//        } else numSeatsTextView.visibility = View.GONE
+//
+//        if (numSeatsTextView <= seatsRemainingSecondScreen) {
+//            btn_plus.setOnClickListener {
+//                Toast.makeText(this, "Seat added", Toast.LENGTH_LONG).show()
+//            }
+//        }
 
 
 
@@ -60,22 +79,5 @@ class MovieActivity : AppCompatActivity() {
         }
 
     }
-
-
-
-    //    ERROR FOUND, I WAS TRYING TO EXECUTE THIS CODE OUSIDE OF MY METHOD ONCREATE
-//    val imageSecondScreen : ImageView = findViewById(R.id.image_second_screen)
-//    val titleSecondScreen : TextView = findViewById(R.id.title_second_screen)
-//    val descriptionSecondScreen : TextView = findViewById(R.id.description_second_screen)
-//
-//    val bundle : Bundle?= intent.extras
-//
-//    val image = bundle!!.getInt("image")
-//    val title = bundle!!.getString("title")
-//    val description = bundle!!.getString("description")
-//
-//    imageSecondScreen.setImageResource(image)
-//    titleSecondScreen.text = title
-//    descriptionSecondScreen.text = description
 
 }
