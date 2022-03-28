@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var newRecycleView : RecyclerView
     private lateinit var newArrayList : ArrayList<Movie>
-    private lateinit var tempArrayList : ArrayList<Movie>
 
 
     // variables of the movie
@@ -107,9 +106,6 @@ class MainActivity : AppCompatActivity() {
 
         adapter.setOnItemClickListener(object : MovieAdapter.OnItemClickListener {
             override fun onItemClick(position: Int){
-
-//             Toast.makeText(this@MainActivity, "You Clicked on item No: $position", Toast.LENGTH_LONG).show()
-
 
             // This line attaches all content to intent, and then starts the new activity with it all
             val intent = Intent(this@MainActivity,MovieActivity::class.java)

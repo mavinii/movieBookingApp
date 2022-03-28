@@ -22,8 +22,13 @@ class MovieActivity : AppCompatActivity() {
         val descriptionSecondScreen : TextView = findViewById(R.id.description_second_screen)
         val starringSecondScreen : TextView = findViewById(R.id.starring_second_screen)
         val runningTimeSecondScreen : TextView = findViewById(R.id.running_time_second_screen)
+        // How to call this line because my array is Int
+        val seatsRemainingSecondScreen : TextView = findViewById(R.id.seats_remaining_second_screen)
+
 
         val bundle : Bundle?= intent.extras
+
+
 
         // variables of the Main Activity
         val image = bundle!!.getInt("image")
@@ -31,6 +36,9 @@ class MovieActivity : AppCompatActivity() {
         val description = bundle!!.getString("description")
         val starring = bundle!!.getString("genres")
         val runningTime = bundle!!.getString("runningTime")
+        // How to call this line because my array is Int
+        val seatsRemaining = bundle!!.getString("seatsRemaining")
+
 
         // connecting the variables main screen second screen
         imageSecondScreen.setImageResource(image)
@@ -38,12 +46,16 @@ class MovieActivity : AppCompatActivity() {
         descriptionSecondScreen.text = description
         starringSecondScreen.text = starring
         runningTimeSecondScreen.text = runningTime
+        // I cant connect these two vars because my Array is Int
+//        seatsRemainingSecondScreen.text = seatsRemaining
 
         btn_book_now.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
+
+
 
     //    ERROR FOUND, I WAS TRYING TO EXECUTE THIS CODE OUSIDE OF MY METHOD ONCREATE
 //    val imageSecondScreen : ImageView = findViewById(R.id.image_second_screen)
@@ -59,4 +71,5 @@ class MovieActivity : AppCompatActivity() {
 //    imageSecondScreen.setImageResource(image)
 //    titleSecondScreen.text = title
 //    descriptionSecondScreen.text = description
+
 }

@@ -121,33 +121,34 @@
                 <!-- Seats remaining -->
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="match_parent">
 
                     <!-- Seat icon -->
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:textSize="20dp"
-                        android:src="@drawable/ic_seat"
                         android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_seat"
+                        android:textSize="20dp"
                         app:tint="@color/seats_color" />
 
                     <!-- Seats remaining -->
                     <TextView
+                        android:id="@+id/seats_remaining_second_screen"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
-                        android:textSize="15sp"
                         android:textColor="@color/seats_color"
-                        android:text="0" />
+                        android:text="0"
+                        android:textSize="15sp" />
 
                     <!-- Seats remaining -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="seats remaining"
                         android:textColor="@color/seats_color"
-                        android:text="seats remaining" />
+                        android:textSize="15sp" />
 
                 </LinearLayout> <!-- END Seats remaining -->
             </LinearLayout>

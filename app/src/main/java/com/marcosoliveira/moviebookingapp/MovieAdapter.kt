@@ -1,12 +1,10 @@
 package com.marcosoliveira.moviebookingapp
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.app.NotificationCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.imageview.ShapeableImageView
 
@@ -46,11 +44,12 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         holder.movieRunningTime.text = currentItem.runningTime
         holder.movieSeatsRemaining.text = currentItem.movieSeatsRemaining.toString()
 
+
         // Adding or removing seats
-        val numSeatsTextView = holder.itemView.findViewById<TextView>(R.id.num_seats)
+//        val numSeatsTextView = holder.itemView.findViewById<TextView>(R.id.num_seats)
 //        val btnMinus = holder.itemView.findViewById<ImageView>(R.id.btn_minus)
 //        val btnPlus = holder.itemView.findViewById<ImageView>(R.id.btn_plus)
-
+//
 //        numSeatsTextView.text = currentItem.numSeats.toString()
 //        if(currentItem.numSeats > 0){
 //            numSeatsTextView.visibility = View.VISIBLE
@@ -74,6 +73,7 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
         var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
         var movieSeatsRemaining : TextView = itemView.findViewById(R.id.movie_seats_remaining)
+
 
         // Connecting the IDs of my activity_movie (seats Minus and PLus)
 //        val numSeats :  TextView = itemView.findViewById(R.id.num_seats)

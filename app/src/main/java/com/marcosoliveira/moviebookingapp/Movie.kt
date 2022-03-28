@@ -7,6 +7,7 @@ data class Movie (
     var genres: String,
     var runningTime: String,
     var movieSeatsRemaining: Int
+
 //    var numSeats: Int = 0
 
 
