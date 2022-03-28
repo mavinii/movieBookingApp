@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var description : Array<String>
     lateinit var genres : Array<String>
     lateinit var runningTime : Array<String>
+    lateinit var movieSeatsRemaining: Array<Int>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,6 +74,15 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.movie_running_time_5)
         )
 
+        movieSeatsRemaining = arrayOf(
+            (0..15).random(),
+            (0..15).random(),
+            (0..15).random(),
+            (0..15).random(),
+            (0..15).random(),
+            (0..15).random()
+        )
+
         newRecycleView = findViewById(R.id.recycleView)
         newRecycleView.layoutManager = LinearLayoutManager(this)
         newRecycleView.setHasFixedSize(true)
@@ -85,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     // Method for running all contents of the array
     private fun getUserdata() {
         for (i in image.indices){
-            val news = Movie(image[i], title[i], description[i], genres[i], runningTime[i]) //, genres[i], runningTime[i], title[i]
+            val news = Movie(image[i], title[i], description[i], genres[i], runningTime[i], movieSeatsRemaining[i])
             newArrayList.add(news)
         }
 
@@ -103,11 +113,12 @@ class MainActivity : AppCompatActivity() {
 
             // This line attaches all content to intent, and then starts the new activity with it all
             val intent = Intent(this@MainActivity,MovieActivity::class.java)
-            intent.putExtra("image",newArrayList[position].titleImage)
-            intent.putExtra("title",newArrayList[position].title)
-            intent.putExtra("description",newArrayList[position].description)
-             intent.putExtra("genres",newArrayList[position].genres)
-             intent.putExtra("runningTime",newArrayList[position].runningTime)
+                intent.putExtra("image",newArrayList[position].titleImage)
+                intent.putExtra("title",newArrayList[position].title)
+                intent.putExtra("description",newArrayList[position].description)
+                intent.putExtra("genres",newArrayList[position].genres)
+                intent.putExtra("runningTime",newArrayList[position].runningTime)
+                intent.putExtra("seatsRemaining",newArrayList[position].movieSeatsRemaining)
 
             startActivity(intent)
 

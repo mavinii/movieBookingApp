@@ -44,6 +44,7 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         holder.movieDescription.text = currentItem.description
         holder.movieGenres.text = currentItem.genres
         holder.movieRunningTime.text = currentItem.runningTime
+        holder.movieSeatsRemaining.text = currentItem.movieSeatsRemaining.toString()
 
         // Adding or removing seats
         val numSeatsTextView = holder.itemView.findViewById<TextView>(R.id.num_seats)
@@ -72,6 +73,7 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         val movieDescription : TextView = itemView.findViewById(R.id.movie_description)
         var movieGenres : TextView = itemView.findViewById(R.id.movie_genres)
         var movieRunningTime : TextView = itemView.findViewById(R.id.movie_running_time)
+        var movieSeatsRemaining : TextView = itemView.findViewById(R.id.movie_seats_remaining)
 
         // Connecting the IDs of my activity_movie (seats Minus and PLus)
 //        val numSeats :  TextView = itemView.findViewById(R.id.num_seats)

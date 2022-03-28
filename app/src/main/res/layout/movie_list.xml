@@ -93,6 +93,14 @@
                             app:tint="@color/seats_color"
                             android:contentDescription="@string/todo" />
 
+                        <TextView
+                            android:id="@+id/movie_seats_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/seats_color"
+                            android:textSize="15sp"
+                            android:layout_marginRight="8dp" />
+
                         <!-- Seats remaining -->
                         <TextView
                             android:id="@+id/seats_remaining"
