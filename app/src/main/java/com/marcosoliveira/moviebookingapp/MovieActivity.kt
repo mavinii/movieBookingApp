@@ -35,7 +35,7 @@ class MovieActivity : AppCompatActivity() {
         val description = bundle!!.getString("description")
         val starring = bundle!!.getString("genres")
         val runningTime = bundle!!.getString("runningTime")
-        val seatsRemaining = bundle!!.getString("seatsRemaining")  //How to call this line, cuz its an Array of Int
+        val seatsRemaining = bundle!!.getInt("seatsRemaining")
 
 
         // connecting the variables main screen second screen
@@ -44,7 +44,7 @@ class MovieActivity : AppCompatActivity() {
         descriptionSecondScreen.text = description
         starringSecondScreen.text = starring
         runningTimeSecondScreen.text = runningTime
-        seatsRemainingSecondScreen.text = seatsRemaining //How to call this line, cuz its an Array of Int
+        seatsRemainingSecondScreen.text = seatsRemaining.toString()
 
         btn_book_now.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
