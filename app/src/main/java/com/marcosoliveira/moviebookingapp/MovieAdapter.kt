@@ -47,16 +47,15 @@ class MovieAdapter(private val newsList : ArrayList<Movie>) : RecyclerView.Adapt
         holder.movieSeatsRemaining.text = currentItem.movieSeatsRemaining.toString()
 
 
-//        // Adding or removing seats
-//        val numSeatsTextView = holder.itemView.findViewById<TextView>(R.id.num_seats)
-//        val btnMinus = holder.itemView.findViewById<ImageView>(R.id.btn_minus)
-//        val btnPlus = holder.itemView.findViewById<ImageView>(R.id.btn_plus)
-//
+        // Adding or removing seats
+        val numSeatsTextView = holder.itemView.findViewById<TextView>(R.id.num_seats)
+        val btnMinus = holder.itemView.findViewById<ImageView>(R.id.btn_minus)
+        val btnPlus = holder.itemView.findViewById<ImageView>(R.id.btn_plus)
+
 //        // Adding or remove the number of seats
 //        numSeatsTextView.text = currentItem.numSeats.toString()
 //        if(currentItem.numSeats > 0){
 //            numSeatsTextView.visibility = View.VISIBLE
-//            btnPlus.setColorFilter(getColor(context, R.color.main_color))
 //        }
 
     }

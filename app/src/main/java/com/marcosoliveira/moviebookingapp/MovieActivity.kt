@@ -50,24 +50,6 @@ class MovieActivity : AppCompatActivity() {
         seatsRemainingSecondScreen.text = seatsRemaining.toString()
 
 
-//        // Adding or removing seats
-//        val numSeatsTextView = findViewById<TextView>(R.id.num_seats)
-//        val btnMinus = findViewById<ImageView>(R.id.btn_minus)
-//        val btnPlus = findViewById<ImageView>(R.id.btn_plus)
-//
-//        // Adding or remove the number of seats
-//        if(seatsRemaining > 0){
-//            numSeatsTextView.visibility = View.VISIBLE
-//        } else numSeatsTextView.visibility = View.GONE
-//
-//        if (numSeatsTextView <= seatsRemainingSecondScreen) {
-//            btn_plus.setOnClickListener {
-//                Toast.makeText(this, "Seat added", Toast.LENGTH_LONG).show()
-//            }
-//        }
-
-
-
         // BTN book now with Toast and a message / tried with SnackBar but could not make that
         // works while taking the user the next screen
         val contextView  = findViewById<Button>(R.id.btn_book_now)
